@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>papyrus</title>
-    <link rel="stylesheet" href="statics/style.css" />
-    <link rel="stylesheet" href="./statics/bootstrap/bootstrap.min.css" />
-  </head>
-  <body>
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
     <section class="sec-1">
       <div class="container">
         <header
@@ -16,7 +11,7 @@
           <div class="col-md-2 col-lg-2 mb-2 mb-md-0 logo">
             <a href="" class="text-decoration-none">
               <img
-                src="./statics/icon/Logo (Stroke) (2).png"
+                src="{% static './icon/Logo (Stroke) (2).png' %}"
                 style="width: 60px; height: 39px"
               />
             </a>
@@ -43,16 +38,16 @@
           <div class="col-md-4 col-lg-4 icons text-end">
             <button class="btn-donate rounded-4">
               <div class="button-inner">
-                <img style="width: 23.29px" src="./statics/icon/user.png"  />
+                <img style="width: 23.29px" src="{% static './icon/user.png' %}"  />
               </div>
             </button>
             <button class="btn-donate rounded-4">
               <div class="button-inner">
-                <img style="width: 24px" src="./statics/icon/shopping-cart.png" />
+                <img style="width: 24px" src="{% static './icon/shopping-cart.png' %}" />
               </div>
             </button>
             <button class="btn-donate rounded-4">
-              <div class="button-inner"><img src="./statics/icon/HEART (2).png" /></div>
+              <div class="button-inner"><img src="{% static './icon/HEART (2).png' %}" /></div>
             </button>
           </div>
         </header>
@@ -96,7 +91,7 @@
               <a href="#"
                 ><img
                   style="width: 100%"
-                  src="./statics/img-book/99.webp"
+                  src="{% static './img-book/99.webp' %}"
                   class="rounded-3"
               /></a>
             </div>
@@ -105,7 +100,7 @@
                 ><img
                   class="rounded-3"
                   style="width: 100%"
-                  src="./statics/img-book/145.webp"
+                  src="{% static './img-book/145.webp' %}"
               /></a>
             </div>
             <div class="carousel-item">
@@ -113,7 +108,7 @@
                 ><img
                   class="rounded-3"
                   style="width: 100%"
-                  src="./statics/img-book/88.webp"
+                  src="{% static './img-book/88.webp' %}"
               /></a>
             </div>
           </div>
@@ -142,7 +137,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/img-book/1234.jpg" /></a>
+                    <a href="#"><img src="{% static './img-book/1234.jpg' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -173,7 +168,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/img-book/178.png" /></a>
+                    <a href="#"><img src="{% static './img-book/178.png' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -200,7 +195,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/img-book/1-24.jpg" /></a>
+                    <a href="#"><img src="{% static './img-book/1-24.jpg' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -227,7 +222,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/img-book/6-2.jpg" /></a>
+                    <a href="#"><img src="{% static './img-book/6-2.jpg' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -270,7 +265,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/roman/3.webp" /></a>
+                    <a href="#"><img src="{% static './roman/3.webp' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -301,7 +296,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/roman/2.webp" /></a>
+                    <a href="#"><img src="{% static './roman/2.webp' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -334,7 +329,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/roman/4.webp" /></a>
+                    <a href="#"><img src="{% static './roman/4.webp' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -357,7 +352,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/roman/5.webp" /></a>
+                    <a href="#"><img src="{% static './roman/5.webp' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -381,7 +376,7 @@
     <section class="sec-5 mt-5">
       <div class="container">
         <div class="posterbok d-flex justify-content-center">
-          <img class="rounded-4" style="width: 100%" src="./statics/roman/293.webp" />
+          <img class="rounded-4" style="width: 100%" src="{% static './roman/293.webp' %}" />
         </div>
       </div>
     </section>
@@ -407,7 +402,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/roman/6.jpg" /></a>
+                    <a href="#"><img src="{% static './roman/6.jpg' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -438,7 +433,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/roman/7.jpg" /></a>
+                    <a href="#"><img src="{% static './roman/7.jpg' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -465,7 +460,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/roman/9.jpg" /></a>
+                    <a href="#"><img src="{% static './roman/9.jpg' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -488,7 +483,7 @@
               <div class="box">
                 <div class="row">
                   <div class="col-6">
-                    <a href="#"><img src="./statics/roman/8.jpg" /></a>
+                    <a href="#"><img src="{% static './roman/8.jpg' %}" /></a>
                   </div>
                   <div class="col-6 boxchild">
                     <a href="#" class="text-decoration-none">
@@ -513,7 +508,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <img src="./statics/roman/7.webp" style="width: 300px; height: 400px" />
+            <img src="{% static './roman/7.webp' %}" style="width: 300px; height: 400px" />
           </div>
           <div class="col-lg-6 contbook" dir="rtl">
             <h2 style="color: #393280; font-weight: 900">کتاب های برجسته</h2>
@@ -536,7 +531,7 @@
               <div class="col">
                 <div class="btn btn-outline-dark">
                   بیشتر بدانید
-                  <img src="./statics/icon/Vector 2.png" />
+                  <img src="{% static './icon/Vector 2.png' %}" />
                 </div>
               </div>
             </div>
@@ -553,7 +548,7 @@
           <div class="row mt-4">
             <div class="col-lg-3 col-md-6 g-5">
               <div class="card d-flex align-items-center">
-                <a href="#"><img src="./statics/img-book/202325.jpg" /></a>
+                <a href="#"><img src="{% static './img-book/202325.jpg' %}" /></a>
                 <div class="card-body">
                   <p class="card-text">دور دنیا در هشتاد روز</p>
                 </div>
@@ -561,7 +556,7 @@
             </div>
             <div class="col-lg-3 col-md-6 g-5">
               <div class="card d-flex align-items-center">
-                <a href="#"><img src="./statics/img-book/200304.jpg" /></a>
+                <a href="#"><img src="{% static './img-book/200304.jpg' %}" /></a>
                 <div class="card-body">
                   <p class="card-text">کرنشا و پاستیل های بنفش</p>
                 </div>
@@ -569,7 +564,7 @@
             </div>
             <div class="col-lg-3 col-md-6 g-5">
               <div class="card d-flex align-items-center">
-                <a href="#"><img src="./statics/img-book/199463.jpg" /></a>
+                <a href="#"><img src="{% static './img-book/199463.jpg' %}" /></a>
                 <div class="card-body">
                   <p class="card-text">قدرت ضمیر ناخوداگاه</p>
                 </div>
@@ -577,7 +572,7 @@
             </div>
             <div class="col-lg-3 col-md-6 g-5">
               <div class="card d-flex align-items-center">
-                <a href="#"><img src="./statics/img-book/203784.jpg" /></a>
+                <a href="#"><img src="{% static './img-book/203784.jpg' %}" /></a>
                 <div class="card-body">
                   <p class="card-text">دولت های توسعه گرا</p>
                 </div>
@@ -591,249 +586,19 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 book1">
-            <a href="#"> <img class="mt-3" src="./statics/img-book/22.jpg" /></a>
+            <a href="#"> <img class="mt-3" src="{% static './img-book/22.jpg' %}" /></a>
           </div>
           <div class="col-lg-3 col-md-6 book1">
-            <a href="#"><img class="mt-3" src="./statics/img-book/23.jpg" /></a>
+            <a href="#"><img class="mt-3" src="{% static './img-book/23.jpg' %}" /></a>
           </div>
           <div class="col-lg-3 col-md-6 book1">
-            <a href="#"> <img class="mt-3" src="./statics/img-book/24.jpg" /></a>
+            <a href="#"> <img class="mt-3" src="{% static './img-book/24.jpg' %}" /></a>
           </div>
           <div class="col-lg-3 col-md-6 book1">
-            <a href="#"> <img class="mt-3" src="./statics/img-book/25.jpg" /></a>
+            <a href="#"> <img class="mt-3" src="{% static './img-book/25.jpg' %}" /></a>
           </div>
         </div>
       </div>
     </section>
-    <footer class="sec-10 mt-5">
-      <div class="container">
-        <div class="footer">
-          <div class="row">
-            <div class="col-lg-7 offset-md-1">
-              <div class="row g-5">
-                <div class="col-lg-4">
-                  <h6 class="fw-bold footer-header w-60 text-light">
-                    راهنمای خرید پاپیروس
-                  </h6>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#" class="footer-link text-light nav-link mt-3">
-                        مراحل ارسال سفارشات
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="footer-link text-light nav-link mt-3">
-                        نحوه ی ثبت سفارشات
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="footer-link text-light nav-link mt-3"
-                        >مراحل بازگرداندن کالا
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="footer-link text-light nav-link mt-3"
-                        >مشاهده فاکتور
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-4">
-                  <h6 class="fw-bold footer-header w-60 text-light">
-                    آشنایی با ما
-                  </h6>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#" class="footer-link text-light nav-link mt-3">
-                        تماس با ما
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="footer-link text-light nav-link mt-3">
-                        نقشه سایت
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-4">
-                  <h6 class="fw-bold footer-header w-60 text-light">
-                    پرسش متداول
-                  </h6>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#" class="footer-link text-light nav-link mt-3">
-                        پشتیبانی 24 ساعته
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="footer-link text-light nav-link mt-3">
-                        ارسال به سراسر کشور
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="footer-link text-light nav-link mt-3">
-                        به روزترین فروشگاه کتاب
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-light nav-link mt-3">
-                        ارسال سریع
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="logo2">
-                <img src="./statics/icon/Logo (Stroke) (2).png" />
-              </div>
-              <div class="textfotter mt-3">
-                فروشگاه پاپیروس همیشه به دنبال بهترین کتاب ها برای شما است.
-              </div>
-              <div class="iconcontent mt-3">
-                <img style="width:30px;" src="./statics/icon/Mask group (3).png" />
-                <img style="width:30px;" src="./statics/icon/Mask group (4).png" />
-                <img style="width:30px;" src="./statics/icon/Mask group (5).png" />
-                <img style="width:30px;" src="./statics/icon/Mask group.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
 
-
-    <script src="./statics/bootstrap/bootstrap.min.js"></script>
-  </body>
-</html>
+{% endblock %}

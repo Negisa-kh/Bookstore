@@ -57,7 +57,7 @@ ROOT_URLCONF = 'book_store.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,10 +130,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = Path(__file__).resolve().parent.parent.parent.parent / 'frontend/statics/'
+STATIC_URL = 'static/'
+STATICFILES_DIRS = (
+    BASE_DIR / 'static',
+)
 # STATIC_URL = "/media/mohammadamin/p/BookStore/backend/book_store/users"
-# STATIC_ROOT = Path(__file__).resolve().parent.parent.parent.parent / 'frontend/statics/'
-print('------------------------------ ', STATIC_URL, STATIC_ROOT)
+# STATIC_ROOT = STATIC_URL
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
