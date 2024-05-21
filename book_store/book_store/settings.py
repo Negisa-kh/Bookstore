@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users',
     'carts',
-    'books'
+    'books',
+    'utils',
 ]
 
 MIDDLEWARE = [
@@ -95,6 +96,14 @@ DATABASES = {
     }
 }
 
+CACHES = {
+    "default":{
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+        "LOCATION": "unique-snowflake",
+    }
+}
+
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
